@@ -32,10 +32,11 @@ em
 
 }
 
-a
+nav a
 {
-     text-decoration : none; 
-    
+    text-decoration : none;
+    flex-grow:3;
+
 }
 
 header
@@ -49,7 +50,13 @@ header
 nav
 {
     display: flex;
+    width:400px;
+    justify-content: space-between;
     
+   
+    
+
+
 
 
 }
