@@ -1,0 +1,86 @@
+/* Structure du site. */
+
+body 
+{
+    margin:50px 50px 50px 50px;
+    font-family: 'Raleway', sans-serif;
+
+}
+
+
+
+h1
+{
+
+}
+
+h2
+
+{
+
+
+}
+
+p 
+
+{
+
+}
+
+em
+{
+
+}
+
+a
+{
+     text-decoration : none; 
+    
+}
+
+header
+{
+
+
+
+
+}
+
+nav
+{
+    display: flex;
+    
+
+
+}
+
+section
+{
+
+}
+
+article
+{
+
+}
+
+aside
+{
+
+}
+
+footer
+{
+
+}
+
+/* class */
+
+.navigation
+{
+    display: flex;
+    justify-content: space-between
+}
+
+
+
