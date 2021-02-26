@@ -2,92 +2,228 @@
 
 body 
 {
-    margin:50px 50px 50px 50px;
+    margin:52px 49px 52px 49px;
     font-family: 'Raleway', sans-serif;
 
+
+
 }
-
-
-
 h1
 {
-
+    font-size: 21px;
 }
-
 h2
 
 {
-
-
+    font-size: 20px;
 }
-
 p 
 
 {
-
+    font-size: 15px;
 }
-
 em
 {
-
-}
-
-nav a
-{
-    text-decoration : none;
-    flex-grow:3;
 
 }
 
 header
 {
 
-
-
-
 }
 
-nav
-{
-    display: flex;
-    width:400px;
-    justify-content: space-between;
-    
-   
-    
-
-
-
-
-}
 
 section
 {
 
 }
-
 article
 {
 
 }
-
 aside
 {
 
 }
-
 footer
 {
 
 }
 
-/* class */
+/* barrre de recherche */
+
+.recherche
+{
+    border: none  1px;
+    width : 417px;
+    height:52px;
+    padding-bottom: 48px;
+    border-radius:25px;
+    display: flex;
+}
+
+
+#icon_loc
+{
+    color:black;
+    background-color: #DDD6D5;
+    width: 55px;
+    height:52px;
+    border-radius: 15px 0px 0px 15px;
+    display: flex;
+    align-items:center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#button
+{
+
+    border-radius:0px 15px 15px 0px;
+    border: none;
+    color: white;
+    background-color:#1873F5;
+    width: 133px;
+    height: 52px;
+    font-size: 18px;
+}
+
+#search 
+{
+    border: solid;
+    border-width:1px;
+    border-color:#DDD6D5;
+}
+
+/* Filtres */
+
+.filtres
+{
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-bottom: 48px;
+    width:75%;
+}
+
+.capsule
+{
+    display: flex;
+    padding-right: 3%;
+    height: 44px;
+    border: solid;
+    border-radius: 40px;
+    border-color: rgb(217,217,217);
+}
+
+.capsule:hover
+{
+    color:rgb(0,101,252);
+    font-style: normal;
+}
+
+.text_filtres
+
+{
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-left:10px;
+    font-weight:bold;
+}
+
+.cercle
+{  
+    justify-content: center;
+    display: flex;
+    flex: wrap;
+    flex-direction: column;
+    height: 44px;
+    width: 44px;
+    border-radius: 50%;
+    background-color: rgb(222, 235, 255);
+}
+
+.icon
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color:rgb(0,101,252);
+}
+
+/* menu navigation */
 
 .navigation
 {
     display: flex;
-    justify-content: space-between
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
+nav 
+{
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+    font-size: 15px;
+}
+
+nav a
+{
+    text-decoration: none;
+}
+
+.hebergement a
+{
+    color:rgb(0,101,252);
+    text-decoration: none;
+}
+
+.activite 
+{
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.activite a
+{
+    color: black;
+}
+
+.inscription  a
+{
+    color:rgb(0,101,252);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#info
+{
+    display:flex;
+    justify-content:space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 24%;
+}
+
+.cercle_info
+{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    border:solid;
+    border-width: 2px;
+    border-color: rgb(217,217,217);
+    color:rgb(0,101,252); 
+    width: 25px;
+    height: 25px;
+    border-radius: 15px;
+}
 
 
