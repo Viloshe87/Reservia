@@ -4,10 +4,9 @@
 body 
 {
     margin:auto;
-    margin-top: 50px;
+    margin: 80px;
     font-family: 'Raleway', sans-serif;
-    max-width:1460px;
-    position: relative;
+    box-sizing: border-box;
 
 
 
@@ -111,7 +110,7 @@ a:active
     display: flex;
     flex-direction:row;
     flex-wrap: wrap;
-    column-gap: 30px;
+    column-gap: 60px;
     padding-bottom: 30px;
 
 }
@@ -183,6 +182,7 @@ nav
     justify-content: space-between;
     width: 400px;
     font-size: 15px;
+    margin-right: 10%
 }
 
 nav a
@@ -247,9 +247,6 @@ nav a
     margin: 0;
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
-
-
 }
 
 /* Hébergement*/
@@ -258,7 +255,7 @@ nav a
 {
     background-color: rgb(242,242,242);
     border-radius: 20px;
-    width: 65%;
+    width: 60%;
     height: auto;
     padding: 30px;
 
@@ -268,6 +265,7 @@ nav a
 .flex
 {
     display:flex;
+    justify-content: space-around;
     flex-wrap: wrap;
     column-gap: 30px;
 }
@@ -278,11 +276,12 @@ nav a
     background-color: white;
     border-radius: 20px;
     border-color: white;
-    width: 280px;
+    width: 15vw;
     padding: 5px;
     height: 215px;
     margin-bottom: 30px;
     box-shadow: 2px 2px 10px rgb(200,200,200);
+    position: relative;
 
 }
 
@@ -291,7 +290,7 @@ nav a
 .card img
 { 
     border-radius: 20px 20px 0px 0px;
-    width: 100%;
+    width: 15vw;
     object-fit: contain;
     max-height: 120px;
     object-fit: cover;
@@ -303,6 +302,8 @@ nav a
     line-height: 5px;
     margin-left: 15px;
     margin-bottom: 17px;
+    width:15vw;
+    position: absolute;
 }
 
 
@@ -321,33 +322,48 @@ nav a
     width: 96%;
 }
 
-.populaire
+.container-populaire
 {
+    display: flex;
+    flex-direction: column;
     background-color: rgb(242,242,242);
+    flex-wrap:wrap;
     border-radius: 20px;
-    width: 24%;
+    width: 20%;
     height: auto;
     margin-left:30px;
     padding: 30px;
+    position: relative;
 }
 
 .pop
 {
     display:flex;
-    width: 335px;
+    min-width: 17vw;
+    width: 19vw;
     height: 145px;
-
+    position: relative;
+    
 }
 
 .pop img
 {
-    width: 100%;
+    width: 18vw;
     max-width: 120px;
     max-height: 150px;
     object-fit: cover;
     object-position: center;
     border-radius: 20px 0px 0px 20px;
     margin-right: 5%;
+    
+   
+}
+.contenue-pop
+{
+    width:17vw;
+    line-height: 15px;
+   
+    
 }
 
 
@@ -359,10 +375,11 @@ nav a
 
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
+    justify-content: space-between;
+    width: 87%;
     height: auto;
     display: flex;
-    column-gap: 55px;
+
 
 }
 
@@ -382,18 +399,18 @@ nav a
 {
     border-radius: 20px;
     border-color: white;
-    width: 315px;
+    width: 15vw;
     padding-bottom:5px; 
     height: 440px;
     margin-bottom: 30px;
     box-shadow: 2px 2px 10px rgb(200,200,200);
-    
+
 }
 .vignette img
 {
     border-radius: 20px 20px 0px 0px;
     width: 100%;
-    height: 385px;
+    height: 20vw;
     object-fit: cover;
     object-position: center bottom;
 
@@ -404,7 +421,7 @@ nav a
 {
     border-radius: 20px;
     border-color: white;
-    width: 315px;
+    width: 17vw;
     padding-bottom:5px;
     height: 230px;
     margin-bottom: 30px;
@@ -413,7 +430,7 @@ nav a
 .vignette2 img
 {
     border-radius: 20px 20px 0px 0px;
-    width: 100%;
+    width: 17vw;
     height: 180px;
     object-fit: cover;
 }
@@ -422,7 +439,7 @@ nav a
 {
     border-radius: 20px;
     border-color: white;
-    width: 315px;
+    width: 17vw;
     padding-bottom:5px;
     height: 170px;
     margin-bottom: 30px;
@@ -432,7 +449,7 @@ nav a
 .vignette3 img
 {
     border-radius: 20px 20px 0px 0px;
-    width: 100%;
+    width: 17vw;
     height: 110px;
     object-fit: cover;
 }
@@ -441,7 +458,7 @@ nav a
 {
     border-radius: 20px;
     border-color: white;
-    width: 315px;
+    width: 18vw;
     padding-bottom: 5px;
     height: 200px;
     margin-bottom: 30px;
@@ -451,7 +468,7 @@ nav a
 .vignette4 img
 {
     border-radius: 20px 20px 0px 0px;
-    width: 100%;
+    width: 18vw;
     height: 140px;
     object-fit: cover;
 }
@@ -460,7 +477,7 @@ nav a
 {
     border-radius: 20px;
     border-color: white;
-    width: 315px;
+    width: 18vw;
     padding-bottom: 5px;
     height: 210px;
     margin-bottom: 30px;
@@ -469,7 +486,7 @@ nav a
 .vignette5 img
 {
     border-radius: 20px 20px 0px 0px;
-    width: 100%;
+    width: 18vw;
     height: 160px;
     object-fit: cover;
 }
@@ -486,8 +503,10 @@ nav a
     background-color: rgb(242,242,242);
     display: flex;
     justify-content: space-between;
-    padding: 50px;
-    padding-right: 250px;
-    line-height: 30px;
+    padding: 30px;
+    padding-right: 400px;
+    line-height: 35px;
 }
+
+
 
