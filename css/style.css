@@ -1,5 +1,9 @@
 /* Structure du site. */
 
+@font-face{
+    font-family: 'Raleway',
+        src:url('../fonts/Raleway.ttf')
+}
 
 body 
 {
@@ -78,7 +82,7 @@ header
     display: flex;
 }
 
-#icon_loc
+.icon_loc
 {
     color:black;
     background-color: #DDD6D5;
@@ -91,7 +95,7 @@ header
     justify-content: center;
 }
 
-#button
+.button
 {
     border-radius:0px 15px 15px 0px;
     border: none;
@@ -102,7 +106,7 @@ header
     font-size: 18px;
 }
 
-#search 
+.search 
 {
     border: solid;
     border-width:1px;
@@ -124,8 +128,6 @@ header
     flex-direction:row;
     flex-wrap: wrap;
     column-gap: 10px;
-    padding-bottom: 30px;
-    padding-top:20px;
 }
 
 .capsule
@@ -136,12 +138,16 @@ header
     border: solid;
     border-radius: 40px;
     border-color: rgb(217,217,217);
+    margin: 10px 25px;
 }
 
-.capsule p:hover
+.capsule:hover 
 {
-    color:rgb(0,101,252);
-    font-style: normal;
+    color: rgb (0,101,252);
+}
+.capsule:hover
+{
+    background-color:rgb (217,217,217);
 }
 
 .text_filtres
@@ -151,7 +157,6 @@ header
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-left:10px;
     font-weight:bold;
     font-size: 17px;
 }
@@ -187,47 +192,35 @@ header
     align-items: center;
 }
 
-.navigation a:hover
-{
-    border-top: 3px solid #0065FC;
-}
-
 nav 
 {
     display: flex;
     justify-content: space-between;
     font-size: 15px;
-    width: 30%;
-    margin-right: 21px;
+    width: 300px;
 }
 
 nav a
 {
     text-decoration: none;
+    color:rgb(0,101,252);
+    border-top: 3px solid transparent;
+    padding: 20px 5px
 }
 
-.hebergement a
+nav a:hover:not(.signup)
 {
-    color:rgb(0,101,252);
-    text-decoration: none;
+    border-top: 3px solid #0065FC;
 }
 
 .activite 
 {
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.activite a
-{
     color: black;
 }
 
-.inscription  a
+a.signup
 {
-    color:rgb(0,101,252);
-    font-weight: bold;
-    text-decoration: none;
+    font-weight: 600;
 }
 
 .info
@@ -261,7 +254,7 @@ nav a
     margin: 0;
     display: flex;
     flex-wrap: wrap;
-    column-gap: 15px;
+    justify-content: space-between;
 }
 
 /* Hébergement*/
@@ -323,8 +316,9 @@ nav a
 {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    width: 96%;
+    justify-content: space-around;
+    justify-content: space-around;
+    width: 100%;
 }
 
 .container-populaire
@@ -334,9 +328,8 @@ nav a
     background-color: rgb(242,242,242);
     flex-wrap:wrap;
     border-radius: 20px;
-    width: 26%;
-    height: auto;
-    padding: 20px 40px 20px 20px;
+    width: 360px;
+
 }
 
 .pop
@@ -345,6 +338,7 @@ nav a
     max-width: 300px;
     min-width: 270px;
     height: 145px;
+    margin-left: 25px
 }
 
 .pop img
@@ -356,11 +350,6 @@ nav a
     object-position: center;
     border-radius: 20px 0px 0px 20px;
     margin-right: 5%;
-}
-.contenue-pop
-{
-    width:17vw;
-    line-height: 15px;
 }
 
 /* Activité */
@@ -375,103 +364,45 @@ nav a
     display: flex;
 }
 
-.bloc2
+.bloc-activite
 {
-    column-gap: 25px;
+    width: 24%;
 }
 
 .vignette 
 {
     border-radius: 20px;
     border-color: white;
-    max-width: 250px;
     padding-bottom:5px; 
-    max-height: 450px;
     margin-bottom: 30px;
     box-shadow: 2px 2px 10px rgb(200,200,200);
+    display: block;
 }
 .vignette img
 {
     border-radius: 20px 20px 0px 0px;
     width: 100%;
-    height: 20vw;
     object-fit: cover;
-    object-position: center bottom;
 }
 
-.vignette2
+.vignette-basse img
 {
-    border-radius: 20px;
-    border-color: white;
-    max-width: 250px;
-    padding-bottom:5px;
-    height: 230px;
-    margin-bottom: 30px;
-    box-shadow: 2px 2px 10px rgb(200,200,200);
+    height: 120px;
 }
-.vignette2 img
+
+.vignette-normal img
 {
-    border-radius: 20px 20px 0px 0px;
-    width: 100%;
+    height: 148px;
+}
+
+.vignette-semi-haute img
+{
     height: 180px;
-    object-fit: cover;
 }
 
-.vignette3
+.vignette-haute img
 {
-    border-radius: 20px;
-    border-color: white;
-    max-width: 250px;
-    padding-bottom:5px;
-    height: 170px;
-    margin-bottom: 30px;
-    box-shadow: 2px 2px 10px rgb(200,200,200);
-}
-
-.vignette3 img
-{
-    border-radius: 20px 20px 0px 0px;
-    width: 100%;
-    height: 110px;
-    object-fit: cover;
-}
-
-.vignette4
-{
-    border-radius: 20px;
-    border-color: white;
-    max-width:250px;
-    padding-bottom: 5px;
-    height: 200px;
-    margin-bottom: 30px;
-    box-shadow: 2px 2px 10px rgb(200,200,200);
-}
-
-.vignette4 img
-{
-    border-radius: 20px 20px 0px 0px;
-    width: 100%;
-    height: 140px;
-    object-fit: cover;
-}
-
-.vignette5
-{
-    border-radius: 20px;
-    border-color: white;
-    max-width:250px;
-    padding-bottom: 5px;
-    height: 210px;
-    margin-bottom: 30px;
-    box-shadow: 2px 2px 10px rgb(200,200,200);
-}
-
-.vignette5 img
-{
-    border-radius: 20px 20px 0px 0px;
-    width: 100%;
-    height: 160px;
-    object-fit: cover;
+    height: 400px;
 }
 
 .container h3
@@ -501,10 +432,37 @@ footer
 
 /* Tablette */
 
-@media screen and (min-width: 768px) and (max-width: 1024px)
-{
+@media screen and (min-width: 768px) and (max-width: 1042px)
+{ 
 
-    /* Hebergement */
+    /* Filtres/responsive */
+
+    .container-filtres
+    {
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 10px;
+    }
+
+    .filtres
+    {
+        display: flex;
+        flex-direction:row;
+        flex-wrap: wrap;
+        column-gap: 10px;
+    }
+    .capsule
+    {
+        display: flex;
+        padding-right: 10px;
+        height: 44px;
+        border: solid;
+        border-radius: 40px;
+        border-color: rgb(217,217,217);
+        margin: 10px 25px;
+    }
+
+    /* Hebergement/responsive */
 
     .centre
     {
@@ -512,9 +470,9 @@ footer
         margin: 0;
         display: flex;
         flex-wrap: wrap;
-        column-gap: 25px;
+        flex-direction: column-reverse;
+        column-gap:25px;
     }
-
 
     .location
     {
@@ -523,6 +481,7 @@ footer
         max-width:100%;
         height: auto;
         padding: 20px;
+        margin: 40px 0px;
     }
 
     .card
@@ -535,7 +494,6 @@ footer
         height: auto;
         margin-bottom: 30px;
         box-shadow: 2px 2px 10px rgb(200,200,200);
-        position: relative;
     }
 
     .contenue    
@@ -545,9 +503,17 @@ footer
         margin-bottom: 17px;
         width:100%;
     }
-    /* populaires */
 
+    /* populaires/responsive */
 
+    .titre_pop
+    {
+
+        width: 100%;
+        padding-left:30px;
+        display: flex;
+        justify-content: space-between;
+    }
 
     .container-populaire
     {
@@ -559,8 +525,99 @@ footer
         border-radius: 20px;
         width: 100%;
         height: auto;
-        padding: 20px 40px 20px 20px;
         margin-top: 30px;
+    }
+
+    .pop
+    {
+        display:flex;
+        max-width: 300px;
+        min-width: 270px;
+        height: 145px;
+        margin-left: 25px
+    }
+
+    .pop img
+    {
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+        border-radius: 20px 0px 0px 20px;
+        margin-right: 5%;
+    }
+
+
+
+    /* Activite/responsive */
+
+    .title-activite
+    {
+        padding-left:30px;
+    }
+
+    .bloc-activite
+    {
+        background-color: aqua;
+        display: contents;
+    }
+
+    .bloc-activite h2
+    {
+        padding-left:30px 
+    }
+
+    .vignette-basse img
+    {
+        height: 120px;
+        width: 300px
+    }
+
+    .vignette-normal img
+    {
+        height: 120px;
+        width: 300px
+    }
+
+    .vignette-semi-haute img
+    {
+        height: 120px;
+        width: 300px;
+    }
+
+    .vignette-haute img
+    {
+        height: 120px;
+        width: 300px
+    }
+
+
+}
+
+/*Smartphone*/
+
+@media screen and (max-width: 767px)
+
+{   
+    .container-principal
+{
+
+    width: 100%;
+    margin: auto;
+}
+
+    /* populaires/responsive/Smartphone */
+
+    .titre_pop
+    {
+        display:flex;
+    }
+
+    .pop
+    {
+        display:flex;
+        width: 300px;
+        height: 145px;
+        margin-left: 25px
     }
 
     .pop img
@@ -574,121 +631,126 @@ footer
         margin-right: 5%;
     }
 
-    /* Activite */
 
+    .container-populaire
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-color: rgb(242,242,242);
+        flex-wrap:wrap;
+        border-radius:0px;
+        width: 100%;
+        height: auto;
+        margin-top: 30px;
+    }
+
+    /* Hebergement/responsive/Smartphone */
+
+    .centre
+    {
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+        column-gap: 25px;
+    }
+
+    .flex
+    {
+        display:flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        column-gap: 1%;
+    }
+
+    .location
+    {
+        background-color:white;
+        border-radius:0px;
+        max-width:100%;
+        height: auto;
+        padding:0px;
+    }
+
+    .card 
+    {
+        background-color: white;
+        border-radius: 20px;
+        border-color: white;
+        padding: 5px;
+        max-width:350px;
+        height: auto;
+        margin-bottom: 30px;
+        box-shadow: 2px 2px 10px rgb(200,200,200);
+        position: relative;
+    }
+
+    .contenue    
+    {
+        line-height: 2px;
+        margin-left: 15px;
+        margin-bottom: 17px;
+        width:100%;
+    }
+
+    /* Activite/responsive/smartphone */
 
     .container
     {
         display: flex;
         flex-wrap: wrap;
+        align-items: center;
         justify-content: space-between;
         width: 100%;
-        height: auto;
-        display: flex;
+        
     }
-    .pop
+    .title-activite
     {
-        display:flex;
-        max-width: 300px;
-        min-width: 270px;
-        height: 145px;
+        padding-left:30px;
     }
 
-    .bloc2
+    .bloc-activite
     {
-        column-gap: 25px;
-    }
 
-    .vignette 
-    {
-        border-radius: 20px;
-        border-color: white;
-        max-width: 250px;
-        padding-bottom:5px; 
-        max-height: 450px;
-        margin-bottom: 30px;
-        box-shadow: 2px 2px 10px rgb(200,200,200);
-    }
-    .vignette img
-    {
-        border-radius: 20px 20px 0px 0px;
+        display: contents;
         width: 100%;
-        height: 20vw;
-        object-fit: cover;
-        object-position: center bottom;
     }
 
-    .vignette2
+    .bloc-activite h2
     {
-        border-radius: 20px;
-        border-color: white;
-        max-width: 250px;
-        padding-bottom:5px;
-        height: 230px;
-        margin-bottom: 30px;
-        box-shadow: 2px 2px 10px rgb(200,200,200);
-    }
-    .vignette2 img
-    {
-        border-radius: 20px 20px 0px 0px;
-        width: 100%;
-        height: 180px;
-        object-fit: cover;
+        padding-left:30px 
     }
 
-    .vignette3
+    .vignette-basse img
     {
-        border-radius: 20px;
-        border-color: white;
-        max-width: 250px;
-        padding-bottom:5px;
-        height: 170px;
-        margin-bottom: 30px;
-        box-shadow: 2px 2px 10px rgb(200,200,200);
-    }
-
-    .vignette3 img
-    {
-        border-radius: 20px 20px 0px 0px;
-        width: 100%;
-        height: 110px;
-        object-fit: cover;
-    }
-
-    .vignette4
-    {
-        border-radius: 20px;
-        border-color: white;
-        max-width:250px;
-        padding-bottom: 5px;
-        height: 200px;
-        margin-bottom: 30px;
-        box-shadow: 2px 2px 10px rgb(200,200,200);
-    }
-
-    .vignette4 img
-    {
-        border-radius: 20px 20px 0px 0px;
-        width: 100%;
-        height: 140px;
-        object-fit: cover;
-    }
-
-    .vignette5
-    {
-        border-radius: 20px;
-        border-color: white;
-        max-width:250px;
-        padding-bottom: 5px;
-        height: 210px;
-        margin-bottom: 30px;
-        box-shadow: 2px 2px 10px rgb(200,200,200);
-    }
-
-    .vignette5 img
-    {
-        border-radius: 20px 20px 0px 0px;
-        width: 100%;
         height: 160px;
-        object-fit: cover;
+        max-width:350px;
+
     }
+
+    .vignette-normal img
+    {
+        height: 160px;
+        max-width:350px;
+
+    }
+
+    .vignette-semi-haute img
+    {
+
+        height: 160px;
+        max-width:350px;
+
+    }
+
+    .vignette-haute img
+    {
+        height: 160px;
+        max-width:350px;
+
+    }
+
+
+}

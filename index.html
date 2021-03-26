@@ -3,11 +3,9 @@
     <head>
         <meta charset="UTF-8">
         <title>Reservia</title>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="./css/style.css">
         <script src="https://kit.fontawesome.com/1ecf0184b2.js" crossorigin="anonymous"></script>
         <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;700&display=swap" rel="stylesheet">
         <meta name="viewport" content="width=device-width" />
     </head>
 
@@ -22,15 +20,9 @@
                     <img src="img/logo/Reservia.svg" alt="logo du site">
 
                     <nav>
-                        <div class="hebergement"> 
-                            <a href="#Hébergements" >Hébergements</a>
-                        </div><br>
-                        <div class="activite">
-                            <a href="#Activités">Activités</a>
-                        </div>
-                        <div class="inscription">
-                            <a href="">S'inscrire</a>
-                        </div>
+                        <a href="#Hébergements" >Hébergements</a>
+                        <a href="#Activités" class="activite">Activités</a>
+                        <a href="" class="signup">S'inscrire</a>
                     </nav>
 
                 </div>
@@ -41,17 +33,17 @@
                 </div>
 
                 <div class="recherche">
-                    <div id="icon_loc">
+                    <div class="icon_loc">
                         <i class="fas fa-map-marker-alt" ></i>
                     </div>
 
-                    <input type="search" id="search" />
-                    <button type="boutton" id="button">Rechercher</button>
+                    <input type="search" class="search" />
+                    <button type="boutton" class="button">Rechercher</button>
                 </div>
 
 
                 <div class="container-filtres">
-                    <p class="text_filtres">Filtres</p>
+                    <span class="text_filtres">Filtres</span>
                     <div class="filtres">
                         <div class="capsule">
                             <div class="cercle">
@@ -109,7 +101,7 @@
 
                 <section class="location">
 
-                    <h2 id="Hébergements">Hébergements à Marseille</h2>
+                    <h2 >Hébergements à Marseille</h2>
 
                     <div class="flex">
 
@@ -220,11 +212,11 @@
                 <aside class="container-populaire">
 
                     <div class="titre_pop">
-                        <h2>Les plus populaires</h2>
+                        <h2 >Les plus populaires</h2>
                         <i class="fas fa-chart-line"></i>
                     </div>
 
-                    <a href="">
+                    <a href=""class="card-wrapper-pop">
                         <div class="card pop">
                             <img src="img/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Chambre simple">
                             <div class="contenue-pop">
@@ -238,7 +230,7 @@
                             </div>
                         </div>
                     </a>
-                    <a href="">
+                    <a href=""class="card-wrapper-pop">
                         <div class="card pop">
                             <img src="img/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Chambre simple">
                             <div class="contenue-pop">
@@ -252,7 +244,7 @@
                         </div>
                     </a>
                     <a href="">
-                        <div class="card pop">
+                        <div class="card pop"class="card-wrapper-pop">
                             <img src="img/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="">
                             <div class="contenue-pop">
                                 <h3>Hôtel Tout bleu et Blanc</h3>
@@ -266,7 +258,6 @@
                         </div>
                     </a>
 
-
                 </aside>
             </div>
 
@@ -274,56 +265,45 @@
 
             <section>
 
-                <h2 id="Activités">Activités a Marseilles</h2>
+                <h2 class="title-activite" >Activités a Marseilles</h2>
 
                 <div class="container">
-                    <div class="bloc1">
-                        <a href="">
-                            <div class="vignette" >
-                                <img src="img/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" >
-                                <h3>Vieux Port</h3>
-                            </div>
+
+                    <div class="bloc-activite">
+                        <a href="" class="vignette vignette-haute" >
+                            <img src="img/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" >
+                            <h3>Vieux Port</h3>
                         </a>
                     </div>
 
-                    <div class="bloc2">
-                        <a href="">
-                            <div class="vignette2" >
-                                <img src="img/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Fort de Pomègues">
-                                <h3>Fort de Pomègues</h3>
-                            </div>
+                    <div class="bloc-activite">
+                        <a href="" class="vignette vignette-semi-haute">
+                            <img src="img/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Fort de Pomègues">
+                            <h3>Fort de Pomègues</h3>
                         </a>
 
-                        <a href="">
-                            <div class="vignette3">
-                                <img src="img/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Íles du Frioul">
-                                <h3>Íles du Frioul</h3>
-                            </div>
+                        <a href="" class="vignette vignette-basse">
+                            <img src="img/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Íles du Frioul">
+                            <h3>Íles du Frioul</h3>
                         </a>
                     </div>
 
-                    <div class="bloc3">
-                        <a href="">
-                            <div class="vignette">
-                                <img src="img/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Parc National des Calanques">
-                                <h3>Parc National des Clanques</h3>
-                            </div>
+
+                    <div class="bloc-activite">
+                        <a href="" class="vignette vignette-haute">
+                            <img src="img/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Parc National des Calanques">
+                            <h3>Parc National des Clanques</h3>
                         </a>
                     </div>
-
-                    <div class="bloc4">
-                        <a href="">
-                            <div class="vignette4">
-                                <img src="img/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre-dame-de-la-garde">
-                                <h3>Notre-dame-de-la-garde</h3>
-                            </div>
+                    <div class="bloc-activite">
+                        <a href=""class="vignette vignette-normal">
+                            <img src="img/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre-dame-de-la-garde">
+                            <h3>Notre-dame-de-la-garde</h3>
                         </a>
 
-                        <a href="">
-                            <div class="vignette5">
-                                <img src="img/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="">
-                                <h3>Parc de Longchamp</h3>
-                            </div>
+                        <a href=""class="vignette vignette-normal">
+                            <img src="img/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="">
+                            <h3>Parc de Longchamp</h3>
                         </a>
                     </div>
                 </div>
