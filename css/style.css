@@ -152,6 +152,11 @@ header
 .text_filtres:hover 
 {
     color:#1873F5
+        background-color:grey;
+}
+.text_filtres:hover 
+{
+    color:#1873F5;
 }
 
 h2.filtres
@@ -346,6 +351,7 @@ a.signup
     flex-wrap:wrap;
     border-radius: 20px;
     width:360px;
+    width: 360px;
 }
 
 .pop_card
@@ -689,104 +695,210 @@ footer
         width:320px;
         height:145px;
     }
-    
-    .container-populaire
-    {
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-        border-radius:0px;
-        width:100%;
-        height: auto;
-        margin-top:30px;
+
+    /*smartphone*/
+
+    @media screen and (max-width: 767px){   
+
+        /*Navigation/responsive/smartphone*/
+
+        .navigation
+        {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+        nav 
+        {
+            display: flex;
+            justify-content: space-around;
+            font-size: 15px;
+            width:100%;
+            position: relative;
+        }
+
+        nav a
+        {
+            text-decoration: none;
+            color:rgb(0,101,252);
+            border-top: 3px solid transparent;
+            padding: 20px 5px
+        }
+
+        nav a:hover:not(.signup)
+        {
+            border-top: 3px solid #0065FC;
+        }
+
+        .activite 
+        {
+            color: black;
+        }
+
+        a.signup
+        {
+            font-weight:600;
+            right:2px;
+            position: absolute;
+            bottom:50px
+        }
+
+        nav a:hover:not(.signup)
+        {
+            border-top: none;
+            border-bottom: 3px solid #0065FC; color:rgb(0,101,252)
+        }
+
+        .button-text
+        {
+            display: none;
+        }
+
+        .button-icon
+        {
+            border-radius:0px 15px 15px 0px;
+            border: none;
+            color: white;
+            background-color:#1873F5;
+            width:60px;
+            height: 52px;
+            font-size: 18px;
+            display: inline;
+        }
+
+        /* Filtres/responsive/Smartphone */
+
+        .info
+        {
+            flex-wrap: nowrap;
+        }
+
+        .Afficher
+        {
+            padding-left: 70px;
+        }
+
+        /* populaires/responsive/smartphone */
+
+        .titre_populaire 
+        {
+            display:flex;
+            justify-content: space-between;
+        }
+
+        .titre_populaire h2
+        {
+            margin-right:70px;
+            width: 100%;
+        }
+
+        .pop_card
+        {
+            width: 300px;
+            height: 145px;
+            margin-left:25px
+        }
+
+        .container-populaire
+        {
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            border-radius:0px;
+            width:100%;
+            height: auto;
+            margin-top:30px;
+        }
+
+        /* Hebergement/responsive/smartphone */
+
+        .location
+        {
+            background-color:white;
+            border-radius:0px;
+            max-width:100%;
+            height: auto;
+            padding: 20px;
+        }
+
+        .card 
+        {
+            max-width:100%;
+            max-height:250px;
+            margin-bottom: 30px;
+        }
+
+        .contenue    
+        {
+            line-height: 2px;
+            margin-left: 15px;
+            margin-bottom: 17px;
+            width:100%;
+        }
+
+        /* Activite/responsive/smartphone */
+
+        .container-activite
+        {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            align-items: center;
+            max-width:100%;
+            padding:20px;
+        }
+
+        .title-activite
+        {
+            padding-left:30px;
+        }
+
+        .bloc-activite
+        {
+            display:contents;
+        }
+
+        .bloc-activite h2
+        {
+            padding-left:30px 
+        }
+
+        .vignette-basse img
+        {
+            height: 160px;
+            max-width:100%;
+        }
+
+        .vignette-normal img
+        {
+            height: 160px;
+            max-width:100%;
+        }
+
+        .vignette-semi-haute img
+        {
+
+            height: 160px;
+            max-width:100%;
+        }
+
+        .vignette-haute img
+        {
+            height: 160px;
+            max-width:100%;
+        }
+
+        /* pied de page/responsive/smartphone*/
+
+        .footer-content
+        {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            line-height: 35px;
+            padding: 0px 70px;
+        }
     }
-
-    /* Hebergement/responsive/smartphone */
-
-    .location
-    {
-        background-color:white;
-        border-radius:0px;
-        max-width:100%;
-        height: auto;
-        padding: 20px;
-    }
-
-    .card 
-    {
-        max-width:100%;
-        max-height:250px;
-        margin-bottom: 30px;
-    }
-
-    .contenue    
-    {
-        line-height: 2px;
-        margin-left: 15px;
-        margin-bottom: 17px;
-        width:100%;
-    }
-
-    /* Activite/responsive/smartphone */
-
-    .container-activite
-    {
-        display: flex;
-        justify-content: space-between;
-        flex-direction: column;
-        align-items: center;
-        max-width:100%;
-        padding:20px;
-    }
-
-    .title-activite
-    {
-        padding-left:30px;
-    }
-
-    .bloc-activite
-    {
-        display:contents;
-    }
-
-    .bloc-activite h2
-    {
-        padding-left:30px 
-    }
-
-    .vignette-basse img
-    {
-        height: 160px;
-        max-width:100%;
-    }
-
-    .vignette-normal img
-    {
-        height: 160px;
-        max-width:100%;
-    }
-
-    .vignette-semi-haute img
-    {
-
-        height: 160px;
-        max-width:100%;
-    }
-
-    .vignette-haute img
-    {
-        height: 160px;
-        max-width:100%;
-    }
-
-    /* pied de page/responsive/smartphone*/
-
-    .footer-content
-    {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        line-height: 35px;
-        padding: 0px 70px;
-    }
-}
