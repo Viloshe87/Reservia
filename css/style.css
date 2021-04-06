@@ -267,7 +267,6 @@ a.signup
     border-radius: 15px;
 }
 
-
 /* div Hébergement/les plus populaires */
 
 .bloc_location_populaire
@@ -284,7 +283,7 @@ a.signup
 .location
 {
     background-color: rgb(242,242,242);
-    border-radius: 20px;
+    border-radius:20px;
     max-width:61%;
     height: auto;
     padding:0px 20px;
@@ -293,7 +292,6 @@ a.signup
 .hebergement-wrapper
 {
     display:flex;
-    justify-content: space-around;
     flex-wrap: wrap;
     column-gap: 1%;
 }
@@ -402,6 +400,7 @@ a.signup
     box-shadow: 2px 2px 10px rgb(200,200,200);
     display: block;
 }
+
 .vignette img
 {
     border-radius: 20px 20px 0px 0px;
@@ -461,36 +460,37 @@ footer
     {
         background-color: rgb(242,242,242);
         max-width:100%;
-        padding: 20px;
+        padding:20px;
     }
     /* Filtres/responsive */
 
     .container-filtres
     {
-        display: flex;
-        flex-wrap: wrap;
-        column-gap: 10px;
+        display:flex;
+        flex-wrap:wrap;
+        column-gap:10px;
     }
 
     .button-filter
     {
         padding-right:10px;
-        margin: 10px 25px;
+        margin:10px 25px;
     }
 
     /* Hebergement/responsive */
 
     .bloc_location_populaire
     {
-        flex-direction: column-reverse;
+        flex-direction:column-reverse;
     }
+
     .card
     {
         border-color: white;
         padding:5px;
-        max-width: 270px;
-        margin-bottom: 30px;
-        box-shadow: 2px 2px 10px rgb(200,200,200);
+        max-width:270px;
+        margin-bottom:30px;
+        box-shadow:2px 2px 10px rgb(200,200,200);
     }
 
     .contenue    
@@ -505,19 +505,17 @@ footer
 
     .titre_populaire
     {
-        width: 100%;
+        width:100%;
         padding-left:30px;
         display:flex;
-        justify-content: space-between;
+        justify-content:space-between;
     }
 
     .container-populaire
     {
         display: flex;
-        flex-direction: row;
+        flex-direction:row;
         justify-content: space-between;
-        align-content: center;
-        flex-wrap:wrap;
         max-width: 100%;
         margin-top:30px;
         max-width:unset;
@@ -525,7 +523,6 @@ footer
 
     .pop_card
     {
-        display:flex;
         max-width:300px;
         min-width:270px;
         height:145px;
@@ -562,8 +559,8 @@ footer
 
     .vignette-semi-haute img
     {
-        height: 120px;
-        width: 300px;
+        height:120px;
+        width:300px;
     }
 
     .vignette-haute img
@@ -575,7 +572,14 @@ footer
 
 /*smartphone*/
 
-@media screen and (max-width: 767px){   
+@media screen and (max-width: 767px){ 
+    
+    /* Filtres/responsive/Smartphone */
+
+    .info
+    {
+        flex-wrap: nowrap;
+    }
 
     .bloc_location_populaire
     {
@@ -618,29 +622,16 @@ footer
     .button-icon
     {
         border-radius:0px 15px 15px 0px;
-        border: none;
-        color: white;
+        border:none;
+        color:white;
         background-color:#1873F5;
         width:60px;
         height: 52px;
-        font-size: 18px;
-        display: inline;
-    }
-
-    /* Filtres/responsive/Smartphone */
-
-    .info
-    {
-        flex-wrap: nowrap;
+        font-size:18px;
+        display:inline;
     }
 
     /* populaires/responsive/smartphone */
-
-    .titre_populaire 
-    {
-        display:flex;
-        justify-content: space-between;
-    }
 
     .titre_populaire h2
     {
@@ -656,12 +647,8 @@ footer
     }
     .container-populaire
     {
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
         border-radius:0px;
         width:91%;
-        height: auto;
         margin-top:30px;
         max-width:unset;
     }
@@ -671,42 +658,34 @@ footer
     .location
     {
         background-color:white;
-        border-radius:0px;
         max-width:100%;
-        height: auto;
-        padding: 20px;
+        padding:20px;
     }
 
     .card 
     {
         max-width:100%;
         max-height:250px;
-        margin-bottom: 30px;
+        margin-bottom:30px;
     }
 
     .contenue    
     {
         line-height: 2px;
-        margin-left: 15px;
-        margin-bottom: 17px;
         width:100%;
     }
 
     /* Activite/responsive/smartphone */
 
-    .container-activite
-    {
-        display: flex;
-        justify-content: space-between;
-        flex-direction: column;
-        align-items: center;
-        max-width:100%;
-        padding:20px;
-    }
-
     .title-activite
     {
-        padding-left:30px;
+        padding:20px
+    }
+
+    .container-activite
+    {
+        max-width:100%;
+        margin:0px;
     }
 
     .bloc-activite
@@ -733,7 +712,6 @@ footer
 
     .vignette-semi-haute img
     {
-
         height: 160px;
         max-width:100%;
     }
@@ -752,6 +730,5 @@ footer
         flex-direction: column;
         justify-content: space-between;
         line-height: 35px;
-        padding: 0px 70px;
     }
 }
