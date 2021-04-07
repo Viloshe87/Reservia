@@ -1,7 +1,7 @@
 /* Structure du site. */
 
 @font-face{
-    font-family: 'Raleway',
+    font-family: 'Raleway';
         src:url('../fonts/Raleway.ttf')
 }
 
@@ -150,8 +150,8 @@ header
 }
 .text_filtres:hover 
 {
-    color:#1873F5
-        background-color:grey;
+    color:#1873F5;
+    background-color:grey;
 }
 .text_filtres:hover 
 {
