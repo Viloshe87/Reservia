@@ -2,7 +2,7 @@
 
 @font-face{
     font-family: 'Raleway';
-        src:url('../fonts/Raleway.ttf')
+    src:url('../fonts/Raleway.ttf')
 }
 
 body 
@@ -149,11 +149,7 @@ header
     color:#1873F5;
 }
 .text_filtres:hover 
-{
-    color:#1873F5;
-    background-color:grey;
-}
-.text_filtres:hover 
+
 {
     color:#1873F5;
 }
