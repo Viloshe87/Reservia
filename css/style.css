@@ -15,7 +15,7 @@ body
 h1
 {
     font-size: 24px;
-    font-style: bold;
+    font-weight:bold;
 }
 
 h2
@@ -185,7 +185,6 @@ h2.filtres
 {  
     justify-content: center;
     display: flex;
-    flex: wrap;
     flex-direction: column;
     height: 44px;
     width: 44px;
@@ -513,7 +512,7 @@ footer
 
     .container-populaire
     {
-        display: flex;
+        display:flex;
         flex-direction:row;
         justify-content: space-between;
         max-width: 100%;
@@ -573,7 +572,7 @@ footer
 /*smartphone*/
 
 @media screen and (max-width: 767px){ 
-    
+
     /* Filtres/responsive/Smartphone */
 
     .info
@@ -651,6 +650,8 @@ footer
         width:91%;
         margin-top:30px;
         max-width:unset;
+        padding: 20px;
+
     }
 
     /* Hebergement/responsive/smartphone */
