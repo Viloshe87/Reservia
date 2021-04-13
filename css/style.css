@@ -22,6 +22,7 @@ h2
 {
     font-size: 20px;
 }
+
 h3
 {
     font-size:18px;
@@ -218,7 +219,7 @@ nav
 nav a
 {
     text-decoration: none;
-    color:rgb(0,101,252);
+    color:black;
     border-top: 3px solid transparent;
     padding: 20px 5px
 }
@@ -226,6 +227,7 @@ nav a
 nav a:hover:not(.signup)
 {
     border-top: 3px solid #0065FC;
+    color:rgb(0,101,252);
 }
 
 .activite 
@@ -237,6 +239,7 @@ a.signup
 {
     font-weight:600;
     right:2px;
+    color:rgb(0,101,252);
 }
 
 .info
@@ -569,7 +572,7 @@ footer
 
 @media screen and (max-width: 767px){ 
 
-    /* Filtres/responsive/Smartphone */
+    /* Filtres/responsive/smartphone */
 
     .info
     {
@@ -593,14 +596,16 @@ footer
 
     nav a
     {
-        border-top: 3px solid transparent;
-        padding: 20px 5px;
+        border-top:unset;
+        padding:20px 25px;
         border-bottom: 3px solid transparent;
     }
 
     nav a:hover:not(.signup)
     {
-        border-top: 3px solid #0065FC;
+        border-top:unset;
+        border-bottom:3px solid #0065FC; 
+        color:rgb(0,101,252)
     }
 
     a.signup
